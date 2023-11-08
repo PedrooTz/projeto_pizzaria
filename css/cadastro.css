@@ -1,0 +1,34 @@
+header{
+    padding: 1.0rem;
+}
+header::after{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(360deg, #fff0 0%, #fc7900 100%);
+    inset: 0;
+    z-index: -1;
+}
+.criarconta{
+    font-size: 12px;
+    display: flex;
+    gap: 12px;
+}
+.criarconta img{
+    height: 4.8vh;
+    padding-top: 12px;
+    
+}
+.criarconta h1{
+padding-top: 7px;
+}
+body{
+    background-image: url(../img/back-cadastro.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.voltar{
+    color: #fff;
+}
