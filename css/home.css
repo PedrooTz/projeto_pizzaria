@@ -10,8 +10,7 @@ body{
     font-family: var(--font);
     color: white;
     gap: 1.5rem;
-    background: rgb(252,121,0);
-    background: linear-gradient(180deg, rgba(252,121,0,1) 13%, rgba(255,255,255,1) 100%);  
+    background: linear-gradient(180deg, rgba(252,121,0,0.59027777777778) 30%, rgba(252,121,0,0) 100%);  
 }
 body::after{
     background: rgb(252,121,0);
@@ -109,20 +108,16 @@ main ul{
     gap: 12px;
 }
 
-main .category, .category-red {
+main .categoria, .categoria {
     width: 3rem;
     height: 3rem;
-    background-color: var(--vermelho-claro);
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0.25rem;
     box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
     transition: 0.8s;
-}
-
-.category-red{
-    background-color: var(--vermelho);
 }
 
 .pizzas{
@@ -162,21 +157,21 @@ main .category, .category-red {
 }
 
 #pizza1{
-    background-image: url(../img/calabresa-queijo.webp);
+    background-image: url(../img/pizza1.webp);
 }
 
 #pizza2{
-    background-image: url(../img/pepperoni.webp);
+    background-image: url(../img/pizza3.svg);
 }
 
 #pizza3{
-    background-image: url(../img/pizza-3.webp);
+    background-image: url(../img/pizza4.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .preco{
-    background-color: var(--vermelho);
+    background-color: red;
     border-radius: 1rem;
     width: fit-content;
     height: fit-content;
@@ -243,13 +238,13 @@ main .category, .category-red {
 }
 
 #pizza4{
-    background-image: url(../img/pizza-4.webp);
+    background-image: url(../img/pizza5.svg);
     background-size: cover;
     background-position: center;
 }
 
 #pizza5{
-    background-image: url(../img/pizza-5.webp);
+    background-image: url(../img/pizza6.svg);
     background-size: cover;
     background-position: center;
 }
@@ -291,25 +286,25 @@ main .bebida{
     padding: 5px 5px;
 }
 
-.drink{
+.bebidas{
     display: flex;
     align-items: center;
     gap: 0.375rem;
 }
 
-.drink-info{
+.bebidas-info{
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 0.375rem;
 }
 
-.nome-drink{
+.nome-bebidas{
     font-weight: 700;
     font-size: 0.875rem;
 }
 
-.desc-drink{
+.desc-bebidas{
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -319,7 +314,7 @@ main .bebida{
 
 footer{
     width: 100vw;
-    background-color: var(--laranja);
+    background-color: var( --cor-principal);
     display: flex;
     padding: 1rem 1.25rem;
     align-items: center;
@@ -337,4 +332,8 @@ footer a{
     justify-content: center;
     gap: 0.375rem;
     color: white;
+}
+footer button{
+    background: transparent;
+    border: none;
 }
