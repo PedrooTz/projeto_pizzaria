@@ -17,7 +17,7 @@ body::after{
     position: absolute;
     content: "";
     display: block;
-    background: linear-gradient(360deg, #fff0 0%,  #f27706 100%);
+    background: linear-gradient(360deg, #fff0 0, var(--cor-principal) 100%);
     inset: 0;
     z-index: -1;
 }
